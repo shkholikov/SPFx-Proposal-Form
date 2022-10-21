@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "proposal-form",
+    "libraryId": "7b80f6a5-beec-4723-9722-ea33a7b702a7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ProposalForm",
+    "solutionShortDescription": "ProposalForm description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

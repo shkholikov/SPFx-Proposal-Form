@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "proposal-form-client-side-solution",
+    "id": "7b80f6a5-beec-4723-9722-ea33a7b702a7",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ProposalForm description"
+      },
+      "longDescription": {
+        "default": "ProposalForm description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "proposal-form Feature",
+        "description": "The feature that activates elements of the proposal-form solution.",
+        "id": "a3a90777-cfcc-4313-8930-8e5ed5ce0030",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/proposal-form.sppkg"
+  }
+}
