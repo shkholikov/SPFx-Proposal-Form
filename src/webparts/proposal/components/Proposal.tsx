@@ -1,7 +1,35 @@
 import * as React from "react";
 import { Box, Button, Grid, TextField, Typography } from "@material-ui/core";
+import Helper from "./Helper";
+import ScrollToTop from "react-scroll-to-top";
+import "./Proposal.module.scss";
 
-export default class Proposal extends React.Component {
+export default class Proposal extends React.Component<any, any> {
+	constructor(props: any) {
+		super(props);
+		this.state = {
+			userInfo: null
+		};
+		// Helper.getUserInfo();
+		// Helper.getUserGroups();
+		// Helper.getUserProfile();
+		console.log(this.props.context);
+	}
+
+	async componentDidMount(): Promise<void> {
+		await Promise.all([Helper.getUserGroups(), Helper.getUserProfile(), Helper.getSiteInfo()]);
+		// Helper.getUserInfo();
+		// Helper.getUserGroups();
+		// Helper.getUserProfile();
+		await Helper.getUserInfo(this);
+		this.logText();
+	}
+
+	logText(): void {
+		const userID = this.state.userInfo.LoginName;
+		console.log("logText + USER ID: " + userID);
+	}
+
 	public render(): React.ReactElement {
 		return (
 			<div>
